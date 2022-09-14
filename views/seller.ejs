@@ -14,14 +14,18 @@
     <header class="nav">
         <!-- <div class="container"> -->
             <div class="logo"><img src="https://cdn.discordapp.com/attachments/840220247646273559/944661501883584532/logo_3.2.png" alt=""></div>
-            <div class='side'>
+            <!-- <div class='side'>
                 <input type="text" placeholder="Search" class="input--login"> 
-            </div>
+            </div> -->
             <ul class="navContainer">
-                <li class="navLinks"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <!-- <li class="navLinks"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li class="navLinks"><a href="home">Home</a></li>
                 <li class="navLinks"><a href="#">Cart</a></li>
                 <li class="navLinks"><a href="seller">Sell</a></li>
+                <li class="navLinks"><a href="contact">Contact Us</a></li> -->
+                <li class="navLinks"><a href="home">Home</a></li>
+                <li class="navLinks"><a href="cart">Accept</a></li>
+                <li class="navLinks"><a href="seller">Donate</a></li>
                 <li class="navLinks"><a href="contact">Contact Us</a></li>
             </ul>
         <!-- </div> -->
@@ -30,20 +34,19 @@
 <div class="seller--form">
         <form action="/seller" method="post">
             <fieldset>
-                <legend>Seller's Form</legend>
-                <h1>Sell Your Products</h1>
+                <legend>Donation Form</legend>
+                <h1>Donate</h1>
                 <div class="sell1">
                     Category : <select name="category" id="">
-                        <option value="book">Book</option>
-                        <option value="notes">Notes</option>
-                        <option value="Others">Equipments</option>
+                        <option value="book">Food</option>
+                        <option value="notes">Clothes</option>
                     </select>
                 </div>
-                <div class="sell1">Name : <br><input type="text" name="name" placeholder="Product Name"></div>
-                <div class="sell1">Original M.R.P. :<br><input type="text" name="mrp" placeholder="Original Price"></div>
-                <div class="sell1">Selling M.R.P. :<br><input type="text" name="price" placeholder="Selling Price"></div>
-                <div class="sell1">Description : <br><input type="text" name="description" placeholder="Product Description"></div>
-                <div class="sell1">
+                <!-- <div class="sell1">Name : <br><input type="text" name="name" placeholder="Product Name"></div> -->
+                <!-- <div class="sell1">Original M.R.P. :<br><input type="text" name="mrp" placeholder="Original Price"></div>
+                <div class="sell1">Selling M.R.P. :<br><input type="text" name="price" placeholder="Selling Price"></div> -->
+                <div class="sell1">Description : <br><input type="text" name="description" placeholder="Description"></div>
+                <!-- <div class="sell1">
                     Subject : <select name="subject" id="">
                         <option value="Mathematics">Mathematics</option>
                         <option value="Physics">Physics</option>
@@ -62,8 +65,9 @@
                         <option value="DSA">DSA</option>
                         <option value="OS">OS</option>
                     </select>
-                </div>
-                <div class="sell1">Condition :<br><input type="text" name="condition" placeholder="Product Condition"></div>
+                </div> -->
+                <div class="sell1">Quantity :<br><input type="text" name="condition" placeholder="Quantity"></div>
+                <div class="sell1">Condition :<br><input type="text" name="condition" placeholder="Condition"></div>
                 <form action="/upload" method="post" enctype="multipart/form-data">
                     <div class="sell1">Image :<br><input type="file" name="image"><span class="img--requirement">(.jpg or .png)</span></div>
                     <button class="sell-btn1" type="submit">upload</button>
@@ -93,7 +97,7 @@
                     </ul>
                 </div>
                 <div class="footer-col-1">
-                    <h4>Recieve the Latest and Exclusive Offers by</h4>
+                    <h4>Join the Lates Drives by</h4>
                     <div class="button-col-2">
                         <a href="" class="btn" type="button">Text</a>
                         <a href="" class="btn" type="button">Email</a>
